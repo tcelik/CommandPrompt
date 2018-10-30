@@ -1,6 +1,7 @@
 package org.csystem.database;
 
 import org.csystem.entity.CommandInfo;
+import org.csystem.util.NumberUtil;
 import org.csystem.util.StringUtil;
 
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ public class CommandPrompt {
         m_cmdList.add(new CommandInfo("cp", this::cpProc));
         m_cmdList.add(new CommandInfo("reverse", StringUtil::reverse));
         m_cmdList.add(new CommandInfo("len", StringUtil::len));
+        m_cmdList.add(new CommandInfo("isPrime", NumberUtil::isPrime));
     }
 
     private void lsProc(String cmd)
