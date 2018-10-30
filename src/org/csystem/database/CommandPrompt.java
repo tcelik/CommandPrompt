@@ -20,6 +20,7 @@ public class CommandPrompt {
         m_cmdList.add(new CommandInfo("reverse", StringUtil::reverse));
         m_cmdList.add(new CommandInfo("len", StringUtil::len));
         m_cmdList.add(new CommandInfo("isPrime", NumberUtil::isPrime));
+        m_cmdList.add(new CommandInfo("isPalindrome", StringUtil::isPalindrome));
     }
 
     private void lsProc(String cmd)
